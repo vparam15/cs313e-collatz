@@ -1,4 +1,4 @@
-CS-313E-Fall-2014
+cs313e collatz
 =================
 
-Elements oftest Software Design
+Elements of Software Design
