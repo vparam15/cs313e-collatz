@@ -50,6 +50,10 @@ class TestCollatz (TestCase) :
         v = collatz_eval(900, 1000)
         self.assertEqual(v, 1720)
 
+    def test_eval_5 (self) :
+        v = collatz_eval(1, 2)
+        self.assertEqual(v, 1)
+
     # -----
     # print
     # -----
