@@ -39,11 +39,18 @@ def collatz_eval (i, j) :
             if n % 2 == 0:
                 n = n // 2
             else:
-                n = (3 * n) + 1
+                n = n + (n // 2) + 1
+                c += 1
             c += 1
         return c
 
-    v = 0
+    if (i < (j // 2)):
+        i = j // 2 + 1
+
+    if (i > j):
+        i, j == j, i
+
+    v = 1
     for num in range (i, j):
         if cycle_length(num) > v:
             v = cycle_length(num)

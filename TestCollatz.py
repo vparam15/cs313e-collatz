@@ -48,11 +48,17 @@ class TestCollatz (TestCase) :
 
     def test_eval_4 (self) :
         v = collatz_eval(900, 1000)
-        self.assertEqual(v, 1720)
+        self.assertEqual(v, 174)
 
+    #Testing the corner condition to make sure 1 works
     def test_eval_5 (self) :
-        v = collatz_eval(1, 2)
+        v = collatz_eval(1, 1)
         self.assertEqual(v, 1)
+
+    #Testing the reverse condition
+    def test_eval_6 (self) :
+        v = collatz_eval(10, 1)
+        self.assertEqual(v, 20)
 
     # -----
     # print
