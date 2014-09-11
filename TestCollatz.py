@@ -24,7 +24,7 @@ class TestCollatz (TestCase) :
     # read
     # ----
 
-    def test_read (self) :
+    def test_read_1 (self) :
         r    = StringIO("1 10\n100 200\n201 210\n900 1000\n")
         i, j = collatz_read(r)
         self.assertEqual(i,  1)
@@ -57,22 +57,43 @@ class TestCollatz (TestCase) :
 
     #Testing the maximum corner condition
     def test_eval_6 (self) :
-        v = collatz_eval (1000000, 1000000)
-        self.assertEqual(v, 152)
+        v = collatz_eval (999999, 999999)
+        self.assertEqual(v, 259)
 
     #Testing the reverse condition
-    def test_eval_6 (self) :
+    def test_eval_7 (self) :
         v = collatz_eval(10, 1)
         self.assertEqual(v, 20)
+
+    def test_eval_8 (self) :
+        v = collatz_eval(10000, 30)
+        self.assertEqual(v, 262)
+
+    def test_eval_9 (self) :
+        v = collatz_eval(500, 650)
+        self.assertEqual (v, 145)
+
+    def test_eval_10 (self) :
+        v = collatz_eval (900000, 999999)
+        self.assertEqual (v, 507)
+
+    def test_eval_11 (self) :
+        v = collatz_eval (1, 989898)
+        self.assertEqual (v, 525)
 
     # -----
     # print
     # -----
 
-    def test_print (self) :
+    def test_print_1 (self) :
         w = StringIO()
         collatz_print(w, 1, 10, 20)
         self.assertEqual(w.getvalue(), "1 10 20\n")
+
+    def test_print_2 (self) :
+        w = StringIO()
+        collatz_print(w, 500, 650, 145)
+        self.assertEqual(w.getvalue(), "500 650 145\n")
 
     # -----
     # solve

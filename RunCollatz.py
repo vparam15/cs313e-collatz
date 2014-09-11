@@ -21,7 +21,7 @@ from Collatz import collatz_solve
 collatz_solve(sys.stdin, sys.stdout)
 
 """
-% cat ccm2493-RunCollatz.in
+% cat RunCollatz.in
 1 10
 100 200
 201 210
@@ -29,7 +29,7 @@ collatz_solve(sys.stdin, sys.stdout)
 
 
 
-% RunCollatz.py < ccm2493-RunCollatz.in > RunCollatz.out
+% RunCollatz.py < RunCollatz.in.txt > RunCollatz.out.txt
 
 
 

@@ -52,7 +52,7 @@ def collatz_eval (i, j) :
         i = j // 2 + 1
 
     v = 1
-    for num in range (i, j):
+    for num in range (i, j + 1):
         if cycle_length(num) > v:
             v = cycle_length(num)
 
