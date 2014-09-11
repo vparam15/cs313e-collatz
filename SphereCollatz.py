@@ -26,6 +26,8 @@ def collatz_read (r) :
 # collatz_eval
 # ------------
 
+cache = {}
+
 def collatz_eval (i, j) :
     """
     i the beginning of the range, inclusive
@@ -36,25 +38,30 @@ def collatz_eval (i, j) :
     if (i > j):
         i, j = j, i
 
-    def cycle_length (n):
-        assert n > 0
-        c = 1
-        while n > 1:
-            if n % 2 == 0:
-                n = n // 2
-            else:
-                n = n + (n // 2) + 1
-                c += 1
-            c += 1
-        return c
-
     if (i < (j // 2)):
         i = j // 2 + 1
 
-    v = 1
-    for num in range (i, j):
-        if cycle_length(num) > v:
-            v = cycle_length(num)
+    max_cycle_length = 1
+    
+    for a in range (i, j + 1):
+        assert a > 0
+        b = a
+        cycle_length = 1
+        while (b > 1):
+            if (b in cache.keys()):
+                cycle_length += cache[b] - 1
+                break
+            else:
+                if b % 2 == 0:
+                    b = b // 2
+                    cycle_length += 1
+                else: 
+                    b += (b // 2) + 1
+                    cycle_length += 2
+        cache[a] = cycle_length
+        if cycle_length > max_cycle_length:
+            max_cycle_length = cycle_length
+        v = max_cycle_length
 
     return (v)
 
@@ -110,7 +117,7 @@ import sys
 collatz_solve(sys.stdin, sys.stdout)
 
 """
-% cat ccm2493-RunCollatz.in
+% cat RunCollatz.in
 1 10
 100 200
 201 210
@@ -118,7 +125,7 @@ collatz_solve(sys.stdin, sys.stdout)
 
 
 
-% RunCollatz.py < ccm2493-RunCollatz.in > RunCollatz.out
+% RunCollatz.py < RunCollatz.in > RunCollatz.out
 
 
 
