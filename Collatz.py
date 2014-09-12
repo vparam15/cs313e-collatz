@@ -26,6 +26,8 @@ def collatz_read (r) :
 # collatz_eval
 # ------------
 
+""" Initialize the cache to be used in the collatz evaluation function """
+
 cache = {}
 
 def collatz_eval (i, j) :
@@ -34,14 +36,21 @@ def collatz_eval (i, j) :
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
-    
+    """ Reverse the range if the end of the range is larger than the beginning of the range """
+
     if (i > j):
         i, j = j, i
+
+    """ First optimization: if the beginning of the range is less than half of the end of the range, skip all numbers from the beginning of the range till half of the end of the range """
 
     if (i < (j // 2)):
         i = j // 2 + 1
 
+    """ Initialize the variable for maximum cycle length """
+
     max_cycle_length = 1
+
+    """ Run a for loop to pass through the optimized range. Use a placeholder variable, b, to run the collatz_eval function. If b is in the cache keys, take its cycle length (the corresponding value), add the evaluated cycle length, and exit the loop. """
     
     for a in range (i, j + 1):
         assert a > 0
