@@ -1,3 +1,33 @@
+commit f392ba3d49a8cde82ae3dbfad4b771afd3afcbbf
+Author: vparam15 <vparam15@gmail.com>
+Date:   Thu Sep 11 21:42:04 2014 -0500
+
+    Delete Collatz.html
+
+commit 6363d0ef161492e72bac59d65d6adf8f53e7b09c
+Author: vparam15 <vparam15@gmail.com>
+Date:   Thu Sep 11 21:41:43 2014 -0500
+
+    Rename RunCollatz.out.txt to RunCollatz.out
+
+commit 17f949e0497a11e8cab8358a74a994085b0dc5f2
+Author: vparam15 <vparam15@gmail.com>
+Date:   Thu Sep 11 21:41:33 2014 -0500
+
+    Rename RunCollatz.in.txt to RunCollatz.in
+
+commit 010a0c8dd0df24e7efa8895535111d765250ac50
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Thu Sep 11 21:39:59 2014 -0500
+
+    Final html file
+
+commit 2cf53359e7587b1c23de6e83bbd6ce8f89dae4ce
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Thu Sep 11 21:27:02 2014 -0500
+
+    Adding log of commits
+
 commit 849a7a9dcfb205a27a107ca16cb028eda34ee569
 Merge: 41c7135 1e2bfcf
 Author: Varun Parameswaran <vparam15@gmail.com>
