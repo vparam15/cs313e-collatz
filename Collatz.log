@@ -1,0 +1,97 @@
+commit 849a7a9dcfb205a27a107ca16cb028eda34ee569
+Merge: 41c7135 1e2bfcf
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Thu Sep 11 15:46:12 2014 -0500
+
+    Merge https://github.com/vparam15/cs313e-collatz
+    rges an updated upstream into a topic branch.
+
+commit 41c7135653cab2f3069567d7b4255a26d90274ae
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Thu Sep 11 15:44:56 2014 -0500
+
+    Collatz.html file
+
+commit 0fc156d173100da387da87460c5304a6d7b59642
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Thu Sep 11 15:41:46 2014 -0500
+
+    First commit of Collatz.html
+
+commit 1e2bfcf9788934f9258524d6de5bf89195bba0e3
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Thu Sep 11 00:42:56 2014 -0500
+
+    Sphere accepted the cache; pydoc left
+
+commit 6d27584b6be878ff6e678620e48d17bc67ce4ed4
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Wed Sep 10 22:33:14 2014 -0500
+
+    1000-line acceptance tests read file
+
+commit b25b3d5a3057b108490104501f039e2d37793321
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Wed Sep 10 22:29:53 2014 -0500
+
+    1000-line acceptance write file
+
+commit d5273f2e787957267003f023b6eff6581b8a64bf
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Wed Sep 10 19:36:50 2014 -0500
+
+    Finished adding all tests and now ready to create 1000 acceptance tests.
+
+commit abc276ef945189c84cecd1acf5ef7aaab874082f
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Wed Sep 10 14:51:21 2014 -0500
+
+    Sphere accepted!
+
+commit 3dd7378797a8b54985d19b9d5b7a650da04e6c18
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Tue Sep 9 18:31:33 2014 -0500
+
+    Added two tests for the corner and reverse cases and also added a couple optimizations to the evaluation code.
+
+commit a9759e4b8ed5a286fc294e62c1989f21b9518d4a
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Mon Sep 8 21:11:14 2014 -0500
+
+    Wrote in one very simple unittest and wrote in the simplest possible solution.
+
+commit 8f8a2c18a2e9c507236045bb798f9138f2edebe4
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Mon Sep 8 20:28:43 2014 -0500
+
+    Fixed the out-of-the-box unit tests
+
+commit f1a95c3ffd1d835a06947db280502ee406f3f83d
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Mon Sep 8 20:19:32 2014 -0500
+
+    Added the 2 out-of-the-box programs for running and testing my piece of code.
+
+commit 91e62c1725140eb6dd6f7ef3f5cf02e4af7905f2
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Wed Sep 3 20:28:03 2014 -0500
+
+    commit 3
+
+commit 92e830b597ce40f58683b38a6e8a2fca13e6e75d
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Wed Sep 3 20:21:35 2014 -0500
+
+    commit 2
+
+commit fefecd6e1db338649de16b14c61694b84d6badc0
+Author: Varun Parameswaran <vparam15@gmail.com>
+Date:   Wed Sep 3 20:05:11 2014 -0500
+
+    commit 1
+
+commit 1edccdea15064b98e665e10c428eabdeae3856b3
+Author: vparam15 <vparam15@gmail.com>
+Date:   Wed Sep 3 09:04:19 2014 -0500
+
+    Initial commit
