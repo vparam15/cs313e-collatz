@@ -1,0 +1,12 @@
+...............
+----------------------------------------------------------------------
+Ran 15 tests in 56.973s
+
+OK
+vparam@salta-katten:/v/filer4b/v35q001/vparam/cs313e-collatz$ coverage report -m
+Name          Stmts   Miss Branch BrMiss  Cover   Missing
+---------------------------------------------------------
+Collatz          36      0     18      0   100%   
+TestCollatz      57      1      0      0    98%   114
+---------------------------------------------------------
+TOTAL            93      1     18      0    99%  
